@@ -30,7 +30,7 @@ class Shop extends ChangeNotifier {
     Product(
         name: 'Premium Chain Watch Silver',
         description: 'Watch with premium silver chain ',
-        price: '\$399',
+        price: '\$499',
         image: Image.asset(
           'assets/images/watch.jpg',
           fit: BoxFit.cover,
