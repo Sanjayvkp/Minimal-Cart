@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lottie/lottie.dart';
 
 class IntroPage extends StatelessWidget {
   const IntroPage({super.key});
@@ -10,35 +11,27 @@ class IntroPage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Icon(
-              Icons.shopping_bag_outlined,
-              color: Colors.black.withOpacity(.80),
-              size: 75,
-            ),
-            const SizedBox(
-              height: 20,
-            ),
+            Lottie.network(
+              
+                'https://lottie.host/9897abbc-8709-497d-93e7-545dbd1b9061/tydA6Atox8.json',
+                width: 200,
+                height: 200,
+                fit: BoxFit.cover),
             Text(
-              'Minimal Shop',
+              'KinG--CarT',
               style: TextStyle(
                   color: Colors.black.withOpacity(.80),
-                  fontSize: 30,
+                  fontSize: 40,
                   fontWeight: FontWeight.w500),
             ),
             const SizedBox(
               height: 5,
             ),
-            Text(
-              'Premium Quality Products',
-              style:
-                  TextStyle(color: Colors.black.withOpacity(.70), fontSize: 16),
-            ),
             const SizedBox(
               height: 30,
             ),
             FloatingActionButton(
-              backgroundColor:
-                  const Color.fromARGB(255, 215, 215, 215).withOpacity(.50),
+              backgroundColor: Colors.grey.withOpacity(.30),
               elevation: 0,
               onPressed: () {
                 Navigator.pushNamed(context, "/shop_page");

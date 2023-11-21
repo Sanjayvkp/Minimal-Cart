@@ -14,16 +14,14 @@ class MylistTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      
       leading: Icon(
         icon,
-        
-        size: 30,
+        size: 25,
         color: Colors.black,
       ),
       title: Text(
         title,
-        style: TextStyle(fontSize: 20),
+        style: TextStyle(fontSize: 20, color: Colors.black.withOpacity(.70)),
       ),
       onTap: onTap,
     );

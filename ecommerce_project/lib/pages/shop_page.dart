@@ -11,6 +11,7 @@ class ShopPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final products = context.watch<Shop>().shop;
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         actions: [
           IconButton(
@@ -36,14 +37,6 @@ class ShopPage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         centerTitle: true,
-        title: Text(
-          'Shopping Page',
-          style: TextStyle(
-              fontSize: 23,
-              color: Colors.black.withOpacity(
-                .70,
-              )),
-        ),
       ),
       drawer: const MyDrawer(),
       body: Column(
@@ -51,16 +44,25 @@ class ShopPage extends StatelessWidget {
           const SizedBox(
             height: 30,
           ),
-          const Text(
-            'Select From These Listed Products',
-            style: TextStyle(
-                color: Colors.black, fontSize: 17, fontWeight: FontWeight.w500),
+          const Padding(
+            padding: EdgeInsets.only(left: 30),
+            child: Row(
+              children: [
+                Text(
+                  'SHOP NOW',
+                  style: TextStyle(
+                      fontSize: 28,
+                      fontWeight: FontWeight.w600,
+                      fontStyle: FontStyle.italic),
+                ),
+              ],
+            ),
           ),
           const SizedBox(
             height: 20,
           ),
           Padding(
-            padding: const EdgeInsets.only(left: 20),
+            padding: const EdgeInsets.only(left: 0),
             child: SizedBox(
               height: MediaQuery.sizeOf(context).height / 1.5,
               child: ListView.builder(

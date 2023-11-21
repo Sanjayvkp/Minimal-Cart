@@ -1,4 +1,5 @@
 import 'package:ecommerce_project/models/shop.dart';
+import 'package:ecommerce_project/pages/about_page.dart';
 import 'package:ecommerce_project/pages/cart_page.dart';
 import 'package:ecommerce_project/pages/intro_page.dart';
 import 'package:ecommerce_project/pages/shop_page.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/intro_page': (context) => const IntroPage(),
         '/shop_page': (context) => const ShopPage(),
         '/cart_page': (context) => const CartPage(),
+         '/about_page': (context) => const AboutPage(),
       },
     );
   }

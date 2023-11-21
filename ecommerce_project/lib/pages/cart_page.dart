@@ -49,10 +49,6 @@ class CartPage extends StatelessWidget {
               Icons.arrow_back_ios_new,
               color: Colors.black,
             )),
-        title: const Text(
-          'Cart Page',
-          style: TextStyle(color: Colors.black, fontSize: 23),
-        ),
         centerTitle: true,
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -60,6 +56,20 @@ class CartPage extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
+            const Padding(
+              padding: EdgeInsets.only(left: 30, top: 30),
+              child: Row(
+                children: [
+                  Text(
+                    'Your-Cart',
+                    style: TextStyle(
+                      fontSize: 30,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                ],
+              ),
+            ),
             SizedBox(
               width: MediaQuery.sizeOf(context).width,
               height: MediaQuery.sizeOf(context).height,
@@ -130,14 +140,17 @@ class CartPage extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.end,
         children: [
           Center(
-            child: FloatingActionButton.extended(
-                elevation: 1,
-                backgroundColor: Colors.black,
-                onPressed: () {},
-                label: const Text(
-                  'Buy Now',
-                  style: TextStyle(color: Colors.white, fontSize: 18),
-                )),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 45),
+              child: FloatingActionButton.extended(
+                  elevation: 1,
+                  backgroundColor: Colors.black,
+                  onPressed: () {},
+                  label: const Text(
+                    'Buy Now',
+                    style: TextStyle(color: Colors.white, fontSize: 18),
+                  )),
+            ),
           ),
         ],
       ),

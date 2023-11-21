@@ -43,8 +43,9 @@ class ProductTile extends StatelessWidget {
       height: MediaQuery.sizeOf(context).height / 3,
       width: MediaQuery.sizeOf(context).width / 1.2,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(15),
-        color: const Color.fromARGB(255, 208, 208, 208),
+        boxShadow: [BoxShadow(blurRadius: 1, color: Colors.black)],
+        borderRadius: BorderRadius.circular(5),
+        color: Colors.white,
       ),
       margin: const EdgeInsets.all(17),
       child: Column(
