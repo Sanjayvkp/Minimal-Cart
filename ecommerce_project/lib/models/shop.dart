@@ -12,7 +12,7 @@ class Shop extends ChangeNotifier {
           fit: BoxFit.cover,
         )),
     Product(
-        name: 'Premium Black Hoodie',
+        name: 'Premium Black Hoodies',
         description: 'Black Hoodie that enhances the weather',
         price: '\$99',
         image: Image.asset(
